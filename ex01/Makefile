@@ -6,14 +6,14 @@
 #    By: antoda-s <antoda-s@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/30 10:38:51 by antoda-s          #+#    #+#              #
-#    Updated: 2024/05/07 10:29:58 by antoda-s         ###   ########.fr        #
+#    Updated: 2024/09/25 10:14:53 by antoda-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 # compilation, linking and cleaning commands/flags
 CXX	= c++
-CF	= -Wall -Wextra -Werror -std=c++98 -g
+CXXFLAGS	= -Wall -Wextra -Werror -std=c++98 -g
 MKF	= --no-print-directory
 AR	= ar -rcs
 
@@ -39,7 +39,7 @@ LF 			= --leak-check=full \
 				--track-origins=yes \
 				--verbose \
 				--log-file=$(LEAKS_FILE) \
-				./$(NAME) 
+				./$(NAME)
 
 #Colors:
 GRN		=	\e[38;5;118m
